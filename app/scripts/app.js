@@ -7,6 +7,14 @@ angular.module('ngViewAnimateApp', [])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+        .when('/one', {
+            templateUrl: 'views/one.html',
+            controller: 'PageOneCtrl'
+        })
+        .when('/two', {
+            templateUrl: 'views/two.html',
+            controller: 'PageTwoCtrl'
+        })
       .otherwise({
         redirectTo: '/'
       });

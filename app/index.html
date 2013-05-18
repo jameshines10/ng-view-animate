@@ -25,9 +25,22 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view></div>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand" href="#/">Animate ngView</a>
+                <ul class="nav">
+                    <li ng-class="homeActive"><a href="#/">Home</a></li>
+                    <li ng-class="oneActive"><a href="#/one">Page One</a></li>
+                    <li ng-class="twoActive"><a href="#/two">Page Two</a></li>
+                </ul>
+            </div>
+        </div>
 
-    <script src="components/angular/angular.js"></script>
+        <div id="ng-view" ng-view ng-animate="{enter: 'view-enter', leave: 'view-leave'}"></div>
+    </div>
+
+    <script src="components/angular-unstable/angular.js"></script>
 
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>
