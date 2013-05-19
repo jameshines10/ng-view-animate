@@ -5,15 +5,18 @@ angular.module('ngViewAnimateApp', [])
         $routeProvider
             .when('/', {
           templateUrl:'views/main.html',
-          controller:'MainCtrl'
+          controller:'MainCtrl',
+          activeItem: 'home'
         })
             .when('/one', {
           templateUrl:'views/one.html',
-          controller:'PageOneCtrl'
+          controller:'PageOneCtrl',
+          activeItem: 'one'
         })
             .when('/two', {
           templateUrl:'views/two.html',
-          controller:'PageTwoCtrl'
+          controller:'PageTwoCtrl',
+          activeItem: 'two'
         })
             .otherwise({
           redirectTo:'/'

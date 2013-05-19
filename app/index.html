@@ -30,9 +30,9 @@
             <div class="navbar-inner">
                 <a class="brand" href="#/">Animate ngView</a>
                 <ul class="nav">
-                    <li ng-class="homeActive"><a href="#/">Home</a></li>
-                    <li ng-class="oneActive"><a href="#/one">Page One</a></li>
-                    <li ng-class="twoActive"><a href="#/two">Page Two</a></li>
+                    <li ng-class="{active: $route.current.activeItem == 'home'}"><a href="#/">Home</a></li>
+                    <li ng-class="{active: $route.current.activeItem == 'one'}"><a href="#/one">Page One</a></li>
+                    <li ng-class="{active: $route.current.activeItem == 'two'}"><a href="#/two">Page Two</a></li>
                 </ul>
             </div>
         </div>

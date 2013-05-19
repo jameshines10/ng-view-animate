@@ -22,7 +22,6 @@
 .view-enter-setup.view-enter-start {
   left:0;
   opacity:1;
-  width: 100%;
 }
 
 .view-leave-setup {
@@ -33,5 +32,4 @@
 .view-leave-setup.view-leave-start {
   left:200px;
   opacity:0;
-  width: 100%;
 }
